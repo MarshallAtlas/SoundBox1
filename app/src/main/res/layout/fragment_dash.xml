@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    tools:context=".dashboard"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="Albums"
+        android:textSize="50sp"
+        android:id="@+id/albumsTextView"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/albumList"
+        android:layout_width="match_parent"
+        android:layout_height="224dp"
+        android:layout_below="@id/albumsTextView"
+        android:layout_marginBottom="364dp" />
+
+    <TextView
+        android:id="@+id/collectionsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/albumList"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="-450dp"
+        android:text="Collections"
+        android:textSize="50sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/collectionList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/collectionsTextView"
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="364dp" />
+
+</RelativeLayout>
